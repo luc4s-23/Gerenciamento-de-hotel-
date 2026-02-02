@@ -1,0 +1,67 @@
+body {
+  background-color: #1a1a1a; /* Um cinza bem escuro para destacar as cores */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Container dos Quadrados */
+.container {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os quadrados */
+}
+
+/* Estilo Base dos Quadrados */
+.quadrado {
+  width: 100px;
+  height: 100px;
+  border: 3px solid;
+  cursor: pointer;
+  transition: all 0.4s ease; /* Faz o preenchimento ser suave */
+  background-color: transparent;
+}
+
+/* Cores Individuais e Efeito Hover */
+
+/* Quadrado 1 - Azul */
+.q1 {
+  border-color: #3498db;
+}
+.q1:hover {
+  background-color: #3498db;
+}
+
+/* Quadrado 2 - Verde */
+.q2 {
+  border-color: #2ecc71;
+}
+.q2:hover {
+  background-color: #2ecc71;
+}
+
+/* Quadrado 3 - Vermelho */
+.q3 {
+  border-color: #e74c3c;
+}
+.q3:hover {
+  background-color: #e74c3c;
+}
+
+/* Quadrado 4 - Amarelo */
+.q4 {
+  border-color: #f1c40f;
+}
+.q4:hover {
+  background-color: #f1c40f;
+}
+
+/* Quadrado 5 - Roxo */
+.q5 {
+  border-color: #9b59b6;
+}
+.q5:hover {
+  background-color: #9b59b6;
+}
