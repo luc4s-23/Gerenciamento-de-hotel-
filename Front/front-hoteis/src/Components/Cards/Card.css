@@ -1,0 +1,11 @@
+.card-preco {
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+}
+
+.card-dia {
+    background-color: rgb(255, 0, 0);
+    width: 150px;
+    height: 150px;
+}

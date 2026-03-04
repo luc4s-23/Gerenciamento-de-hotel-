@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import './Components/Cards/Card';
+import {Card_preco, Card_Dia} from './Components/Cards/Card';
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Card_preco />
+      <Card_Dia />
+      <Card_preco />
     </div>
   );
 }
