@@ -1,0 +1,10 @@
+.card-hotel {
+    background-color: rgb(241, 241, 241);
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
