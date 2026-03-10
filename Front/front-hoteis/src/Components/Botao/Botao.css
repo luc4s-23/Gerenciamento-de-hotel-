@@ -1,0 +1,14 @@
+.btn-base {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+}
+
+/* Variações que você vai "chamar" via props */
+.verde { background-color: #28a745; color: white; }
+.azul { background-color: #007bff; color: white; height: 50px; width: 130px; font-size: 20px;}
+.fantasma { background-color: transparent; border: 1px solid black; }
+.vermelho{ background-color: red; color: white;}

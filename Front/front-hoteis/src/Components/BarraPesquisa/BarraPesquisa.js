@@ -1,10 +1,11 @@
 import './BarraPesquisa.css';
+import Botao from '../Botao/Botao'
 
 function BarraPesquisa() {
     return (
         <div className="search-container">
             <input type="text" placeholder="Buscar quartos..." className="search-input" />
-            <button className="search-button">Buscar</button>
+            <Botao classe='azul'>Buscar</Botao>
         </div>
     );
 }
