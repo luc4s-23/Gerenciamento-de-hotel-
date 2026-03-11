@@ -1,6 +1,6 @@
 import './Botao.css'
 
-function BotaoNovoQuarto({ children, classe, onClick }) {
+function Botao({ children, classe, onClick }) {
     return (
         <button className={`btn-base ${classe}`} onClick={onClick}>
             {children}
@@ -8,4 +8,4 @@ function BotaoNovoQuarto({ children, classe, onClick }) {
     );
 }
 
-export default BotaoNovoQuarto;
+export default Botao;
