@@ -1,6 +1,7 @@
 using Hoteis.API.Data;
 using Hoteis.API.Repository;
 using Hoteis.API.Service;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore; // <-- ADICIONAR ESTE USING
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +26,26 @@ builder.Services.AddScoped<IReservaRepository, ReservaRepository>();
 builder.Services.AddScoped<IReservaService, ReservaService>();
 
 var app = builder.Build();
+
+// Program.cs
+app.UseExceptionHandler(appError =>
+{
+    appError.Run(async context =>
+    {
+        context.Response.StatusCode = 500;
+        context.Response.ContentType = "application/json";
+        var error = context.Features.Get<IExceptionHandlerFeature>();
+        if (error != null)
+        {
+            await context.Response.WriteAsJsonAsync(new
+            {
+                statusCode = 500,
+                message = "Ocorreu um erro interno. Tente novamente."
+                // Nunca exponha error.Error.Message em produção!
+            });
+        }
+    });
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

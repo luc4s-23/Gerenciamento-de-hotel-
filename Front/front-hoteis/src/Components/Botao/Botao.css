@@ -8,7 +8,7 @@
 }
 
 /* Variações que você vai "chamar" via props */
-.verde { background-color: #28a745; color: white; }
+.verde { background-color: #28a745; color: white; font-size: 15px;}
 .azul { background-color: #007bff; color: white; height: 50px; width: 130px; font-size: 20px;}
 .fantasma { background-color: transparent; border: 1px solid black; }
 .vermelho{ background-color: red; color: white;}
