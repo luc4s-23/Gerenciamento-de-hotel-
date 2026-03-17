@@ -6,12 +6,15 @@ import {
   Phone,
   RoomQuartos,
   RoomReservas,
+  Exit,
+  Hide
 } from "../icons/index";
 
 function NavBar() {
   return (
     <nav className="nav-bar">
       <h2 className="nav-logo">H0T3L</h2>
+      <hr />
 
       <div className="nav-links">
         <Link className="link-item" to="/">
@@ -38,6 +41,17 @@ function NavBar() {
           <span>Reservas</span>
         </Link>
       </div>
+      <hr />
+
+      <Link className="link-item" to="">
+        <Hide className="nav-icon" />
+        <span>Ocultar</span>
+      </Link>
+
+      <Link className="link-item" to="">
+        <Exit className="nav-icon" />
+        <span>Sair</span>
+      </Link>
 
       <div className="nav-footer">
         <p>Copyright©LUCAS-DANIEL</p>

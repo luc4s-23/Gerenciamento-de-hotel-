@@ -55,3 +55,8 @@
 .link-item:hover .nav-icon {
   transform: scale(1.1); /* Pequeno feedback visual senior */
 }
+
+hr{
+    background-color: white;
+    width: 85%;
+}
