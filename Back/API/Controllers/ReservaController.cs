@@ -15,7 +15,7 @@ namespace Hoteis.API.Controllers
             _service = service;
         }
 
-        [HttpPost("Nova-reserva/{Quarto_ID_FK}")]
+        [HttpPost("/Nova-reserva/{Quarto_ID_FK}")]
         public async Task<IActionResult> NovaReservaAsync([FromBody] ReservaDTO dto, [FromRoute] int Quarto_ID_FK)
         {
             if (!ModelState.IsValid)
@@ -26,19 +26,20 @@ namespace Hoteis.API.Controllers
             return Ok(dto);
         }
 
-        [HttpGet("Buscar-reservas")]
+        [HttpGet("/Buscar-reservas")]
         public async Task<List<ReservaReadDTO>> BuscarTodosAsync()
         {
             return await _service.BuscarTodosAsync();
         }
-        [HttpGet("buscar-por-id{id}")]
+        
+        [HttpGet("/buscar-por-id/{id}")]
         public async Task<IActionResult> BuscarPorIdAsync(int id)
         {
             var ReservaID = await _service.BuscarPorIdAsync(id);
             return Ok(ReservaID);
         }
-        [HttpPut("atualizar-reserva{id}")]
-        public async Task<IActionResult> AtualizarReserva(int Id, ReservaDTO dto)
+        [HttpPut("/atualizar-reserva/{id}")]
+        public async Task<IActionResult> AtualizarReserva([FromRoute]int Id, ReservaDTO dto)
         {
             var AtualizarReserva = await _service.AtualizarAsync(Id, dto);
             return Ok(AtualizarReserva);

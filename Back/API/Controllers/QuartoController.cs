@@ -27,24 +27,24 @@ namespace Hoteis.API.Controller
             return Ok(dto);
         }
 
-        [HttpGet("Buscar-todos-os-quartos")]
-        public async Task<IEnumerable<Quarto>> ListarQuartos()
+        [HttpGet("/Buscar-todos-os-quartos")]
+        public async Task<IEnumerable<QuartoDTO>> BuscarTodosAsync()
         {
             return await _service.ListarAsync();
         }
 
-        [HttpDelete("exclir-quarto{id}")]
+        [HttpDelete("/exclir-quarto/{id}")]
         public async Task<IActionResult> ApagarQuarto([FromRoute] int id)
         {
             if (id <= 0)
             {
-                throw new ArgumentException("O ID do quarto precisa ser válido", nameof(id));
+                return BadRequest("O ID do quarto precisa ser válido.");
             }
             await _service.DeletarQuartoAsync(id);
             return Ok(id);
         }
 
-        [HttpPut("atualizar-infos{id}")]
+        [HttpPut("/atualizar-infos/{id}")]
         public async Task<IActionResult> AtualizarInfo([FromRoute]int id, [FromBody]QuartoDTO dto)
         {
             if (id <= 0)

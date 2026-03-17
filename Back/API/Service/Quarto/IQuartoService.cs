@@ -9,7 +9,7 @@ namespace Hoteis.API.Service
     {
         // 3. Use o alias 'QuartoModel' em vez do nome conflitante 'Quarto'
         Task AdicionarQuartoAsync(QuartoDTO dto);
-        Task<IEnumerable<Quarto>> ListarAsync();
+        Task<IEnumerable<QuartoDTO>> ListarAsync();
         Task DeletarQuartoAsync(int id);
         Task<Quarto> BuscarPorIdAsync(int id);
         Task<Quarto> AtualizarQuartoAsync(int id, QuartoDTO dto);

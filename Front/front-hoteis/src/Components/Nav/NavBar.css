@@ -1,44 +1,57 @@
+/* Layout da Barra Lateral */
 .nav-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 30px 0;
-    gap: 50px;
-    width: 12%;
-    min-height: 100vh;
-    background-color: #000;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    border-radius: 0 25px 25px 0;
-    box-shadow: 10px 0px 10px rgb(177, 177, 177);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  gap: 50px;
+  width: 15%; /* Ajustado para não espremer o texto */
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links {
-    display: flex;
-    width: 100%;
-    height: 75vh;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border: 1px solid red;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
 }
 
-.links {
-    color: white;
-    text-decoration: none;
+/* O Item de Link (Pai) */
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 20px;
+  color: #ffffff; /* Define a cor do texto e do ícone inicial */
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 8px; /* Fica mais elegante no hover */
+  transition: all 0.3s ease;
 }
 
-h2 {
-    font-size: 30px;
+/* O Ícone SVG */
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  /* O segredo: currentColor herda o 'color: white' do .link-item */
+  fill: currentColor; 
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
 }
 
-.footer {
-    display: flex;
+/* Estado de HOVER */
+.link-item:hover {
+  background-color: #ffffff;
+  color: #000000; /* Muda texto e ícone (via currentColor) para preto */
 }
 
-h3 {
-    font-weight: 100;
-    font-size: 12px;
+.link-item:hover .nav-icon {
+  transform: scale(1.1); /* Pequeno feedback visual senior */
 }
