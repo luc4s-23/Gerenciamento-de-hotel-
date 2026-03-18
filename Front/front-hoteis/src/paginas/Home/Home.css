@@ -1,9 +1,8 @@
 .hero-home{
     border: 5px solid black;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     padding: 5px;
+    height: 500px;
 }
 
 .main-container{

@@ -1,7 +1,19 @@
+.main-quarto{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.cards-quartos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/*
 .quarto-container {
     display: flex;
     flex-direction: column;
-    /* centraliza conteúdo horizontalmente */
+    centraliza conteúdo horizontalmente 
     align-items: center;
     width: 80%;
     margin: 40px auto;
@@ -39,14 +51,14 @@
 
 .tabela-dark{
     width:100%;
-    border-collapse:collapse; /* IMPORTANTE */
+    border-collapse:collapse;  IMPORTANTE 
     border-spacing:0;
     color:#000000;
     border-radius:10px 10px 10px 10px;
     overflow:hidden;
 }
 
-/* cabeçalho */
+ cabeçalho 
 .tabela-dark thead {
     background-color: #2b2f33;
     color: white;
@@ -63,18 +75,18 @@
     font-weight: 600;
 }
 
-/* linhas */
+ linhas 
 .tabela-dark td {
     padding: 14px;
 }
 
-/* separação entre linhas */
+ separação entre linhas 
 .tabela-dark tbody tr {
     border-top: 1px solid #3b3f45;
 }
 
-/* hover */
+hover 
 .tabela-dark tbody tr:hover {
     background-color: #2a2e33;
     color: white;
-}
+} */

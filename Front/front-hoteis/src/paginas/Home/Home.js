@@ -1,5 +1,5 @@
 import './Home.css';
-import CardHotel from '../../Components/Card/Card';
+import CardHotel from '../../Components/Card/CardResumo';
 
 function Home() {
     return (
