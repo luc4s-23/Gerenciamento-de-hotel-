@@ -9,6 +9,9 @@ function Quarto() {
         <Card />
         <Card />
         <Card />
+        <Card />
+        <Card />
+        <Card />
       </section>
     </main>
   );
