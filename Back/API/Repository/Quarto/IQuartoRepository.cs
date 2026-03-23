@@ -1,10 +1,11 @@
+using Hoteis.API.DTO;
 using Hoteis.API.Model;
 
 namespace Hoteis.API.Repository
 {
     public interface IQuartoRepository
     {
-        Task<IEnumerable<Quarto>> ListarTodosAsync();
+        Task<IEnumerable<QuartoDTO>> ListarTodosAsync();
         Task<Quarto?> BuscarPorIdAsync(int id);
         Task<Quarto?> BuscarPorNumero(string Numero_quarto);
         Task AdicionarAsync(Quarto quarto);

@@ -48,7 +48,7 @@ function NavBar() {
         <span>Ocultar</span>
       </Link>
 
-      <Link className="link-item" to="">
+      <Link className="link-item" to="/LoginUser">
         <Exit className="nav-icon" />
         <span>Sair</span>
       </Link>

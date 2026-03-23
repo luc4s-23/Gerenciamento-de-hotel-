@@ -1,11 +1,11 @@
-import './Botao.css'
+import "./Botao.css";
 
-function Botao({ children, classe, onClick }) {
-    return (
-        <button className={`btn-base ${classe}`} onClick={onClick}>
-            {children}
-        </button>
-    );
+function Botao({ children, classe, onClick, className }) {
+  return (
+    <button className={`btn-base ${classe} ${className}`} onClick={onClick}>
+      {children}
+    </button>
+  );
 }
 
 export default Botao;
