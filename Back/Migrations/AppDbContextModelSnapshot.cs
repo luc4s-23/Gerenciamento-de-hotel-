@@ -113,25 +113,35 @@ namespace Hoteis.Migrations
 
             modelBuilder.Entity("Hoteis.API.Model.Usuario", b =>
                 {
-                    b.Property<int>("Id_Usuario")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Usuario"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Email_usuario")
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Nome_usuario")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Senha_Hash")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Tipo_user")
+                    b.Property<int>("Nivel_Acesso")
                         .HasColumnType("int");
 
-                    b.HasKey("Id_Usuario");
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("SenhaHash")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("SenhaSalt")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.HasKey("Id");
 
                     b.ToTable("usuarios");
                 });

@@ -7,6 +7,7 @@ import './App.css';
 import Quarto from './paginas/Quartos/Quarto';
 import Reserva from './paginas/Reserva/Reserva';
 import LoginUser from './paginas/Login/LoginUser';
+import RecuperarSenha from './paginas/RecuperarSenha/RecuperarSenha';
 
 function LayoutComMenu() {
   return (
@@ -31,6 +32,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/LoginUser" element={<LoginUser />} />
+        <Route path="/RecuperarSenha" element={<RecuperarSenha />} />
         <Route path="/*" element={<LayoutComMenu />} />
       </Routes>
     </Router>

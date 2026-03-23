@@ -1,4 +1,5 @@
 using Hoteis.API.Data;
+using Hoteis.API.DTO;
 using Hoteis.API.Model;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,9 +14,16 @@ namespace Hoteis.API.Repository
             _context = context;
         }
 
-        public async Task<IEnumerable<Quarto>> ListarTodosAsync()
+        public async Task<IEnumerable<QuartoDTO>> ListarTodosAsync()
         {
-            return await _context.quartos.ToListAsync();
+            return await _context.quartos.Select(q => new QuartoDTO
+            {
+                Capacidade = q.Capacidade,
+                Descricao = q.Descricao,
+                Numero_quarto = q.Numero_quarto,
+                Preco_diaria = q.Preco_diaria,
+                tipo = q.tipo
+            }).ToListAsync();
         }
 
         public async Task<Quarto?> BuscarPorIdAsync(int id)

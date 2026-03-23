@@ -1,0 +1,61 @@
+.login-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100vh;
+}
+
+.area-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bloco1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 551px;
+    padding-left: 55px;
+    padding-right: 55px;
+    gap: 40px;
+}
+
+.input-login, .input-senha, .botao-entrar{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.botao-entrar{
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.redefinir-senha{
+    text-decoration: none;
+    color: rgb(73, 115, 255);
+}
+
+.img-exm{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.hero{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../Midia/imgFundo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
