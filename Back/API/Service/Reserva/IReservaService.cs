@@ -1,7 +1,7 @@
-using Hoteis.API.Model;
-using Hoteis.API.DTO;
+using Back.API.Model;
+using Back.API.DTO;
 
-namespace Hoteis.API.Service
+namespace Back.API.Service
 {
     public interface IReservaService
     {

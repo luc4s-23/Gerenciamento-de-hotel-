@@ -1,7 +1,7 @@
 
-using static Hoteis.API.Model.Reserva;
+using static Back.API.Model.Reserva;
 
-namespace Hoteis.API.DTO
+namespace Back.API.DTO
 {
     public class ReservaReadDTO
     {

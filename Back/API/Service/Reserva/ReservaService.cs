@@ -1,11 +1,11 @@
-using Hoteis.API.Model;
-using Hoteis.API.DTO;
-using Hoteis.API.Repository;
-using Hoteis.API.Data;
+using Back.API.Model;
+using Back.API.DTO;
+using Back.API.Repository;
+using Back.API.Data;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Hoteis.API.Service
+namespace Back.API.Service
 {
     public class ReservaService : IReservaService
     {

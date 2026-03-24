@@ -1,8 +1,8 @@
-using Hoteis.API.DTO;
-using Hoteis.API.Repository;
-using Hoteis.API.Model;
+using Back.API.DTO;
+using Back.API.Repository;
+using Back.API.Model;
 
-namespace Hoteis.API.Service
+namespace Back.API.Service
 {
     public class QuartoService : IQuartoService
     {

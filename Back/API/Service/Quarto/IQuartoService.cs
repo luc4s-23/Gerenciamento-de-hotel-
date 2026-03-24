@@ -1,9 +1,9 @@
 // 1. Defina um alias (apelido) para a classe Quarto do Model
-using Hoteis.API.DTO;
-using Hoteis.API.Model; // Este using ainda é útil se você tiver outros tipos aqui.
+using Back.API.DTO;
+using Back.API.Model; // Este using ainda é útil se você tiver outros tipos aqui.
 
 // 2. Seu namespace permanece o mesmo para manter a organização
-namespace Hoteis.API.Service
+namespace Back.API.Service
 {
     public interface IQuartoService
     {

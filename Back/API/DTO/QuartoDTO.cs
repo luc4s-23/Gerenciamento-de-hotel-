@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hoteis.API.DTO
+namespace Back.API.DTO
 {
     public class QuartoDTO
     {

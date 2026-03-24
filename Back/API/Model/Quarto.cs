@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hoteis.API.Model
+namespace Back.API.Model
 {
     public class Quarto
     {

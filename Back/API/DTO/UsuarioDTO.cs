@@ -1,11 +1,9 @@
-using System.ComponentModel.DataAnnotations;
 
-namespace Back.API.Model
+
+namespace Back.API.DTO
 {
-    public class Usuario
+    public class UsuarioDTO
     {
-        [Key]
-        public int Id { get; set; }
         public string Nome { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
 
@@ -15,6 +13,5 @@ namespace Back.API.Model
 
         public int Nivel_Acesso { get; set; } // 0: Funcionario, 1: Admin
         public bool Ativo { get; set; } = true; //Permite desativar um funcionário que saiu
-
     }
 }

@@ -1,10 +1,8 @@
-using System.Collections;
-using Hoteis.API.Data;
-using Hoteis.API.DTO;
-using Hoteis.API.Model;
+using Back.API.Data;
+using Back.API.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hoteis.API.Repository
+namespace Back.API.Repository
 {
     public class ReservaRepository : IReservaRepository
     {

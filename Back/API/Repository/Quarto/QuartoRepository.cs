@@ -1,9 +1,10 @@
-using Hoteis.API.Data;
-using Hoteis.API.DTO;
-using Hoteis.API.Model;
+using Back.API.Data;
+using Back.API.DTO;
+using Back.API.Model;
+using Back.API.Repository;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hoteis.API.Repository
+namespace Back.API.Repository
 {
     public class QuartoRepository : IQuartoRepository
     {

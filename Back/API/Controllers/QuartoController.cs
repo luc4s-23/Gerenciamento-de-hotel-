@@ -1,10 +1,9 @@
-using Hoteis.API.DTO;
-using Hoteis.API.Model;
-using Hoteis.API.Service;
+using Back.API.DTO;
+using Back.API.Service;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace Hoteis.API.Controller
+namespace Back.API.Controller
 {
     [Route("[controller]")]
     public class QuartoController : ControllerBase

@@ -1,9 +1,9 @@
-using Hoteis.API.DTO;
-using Hoteis.API.Model;
-using Hoteis.API.Service;
+using Back.API.DTO;
+using Back.API.Model;
+using Back.API.Service;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Hoteis.API.Controllers
+namespace Back.API.Controllers
 {
     [Route("[controller]")]
     public class ReservaController : ControllerBase

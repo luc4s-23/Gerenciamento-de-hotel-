@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Hoteis.Migrations
 {
     /// <inheritdoc />
-    public partial class AdicionarTabelaUsuarios_393 : Migration
+    public partial class bd_394 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

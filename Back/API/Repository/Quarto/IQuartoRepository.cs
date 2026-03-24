@@ -1,7 +1,7 @@
-using Hoteis.API.DTO;
-using Hoteis.API.Model;
+using Back.API.DTO;
+using Back.API.Model;
 
-namespace Hoteis.API.Repository
+namespace Back.API.Repository
 {
     public interface IQuartoRepository
     {
