@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Back.API.Controllers
 {
+    [ApiController]
     [Route("[controller]")]
     public class UusuarioController : ControllerBase
     {
@@ -24,7 +25,7 @@ namespace Back.API.Controllers
             return Ok(dto);
         }
 
-        [HttpGet("listar-usuarios")]
+        [HttpGet("/listar-usuarios")]
         public async Task<List<UsuarioDTO>> ListarTodosUsuarios()
         {
             return await _service.BuscarTodosAsync();

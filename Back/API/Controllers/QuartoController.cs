@@ -3,9 +3,10 @@ using Back.API.Service;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace Back.API.Controller
+namespace Back.API.Controllers
 {
-    [Route("[controller]")]
+    [ApiController]
+    [Route("api/[controller]")]
     public class QuartoController : ControllerBase
     {
         private readonly IQuartoService _service;
@@ -15,7 +16,7 @@ namespace Back.API.Controller
             _service = service;
         }
 
-        [HttpPost("Novo-Quarto")]
+        [HttpPost("/novo-quarto")]
         public async Task<IActionResult> Criar([FromBody] QuartoDTO dto)
         {
             if (!ModelState.IsValid)
@@ -26,13 +27,13 @@ namespace Back.API.Controller
             return Ok(dto);
         }
 
-        [HttpGet("/Buscar-todos-os-quartos")]
+        [HttpGet]
         public async Task<IEnumerable<QuartoDTO>> BuscarTodosAsync()
         {
             return await _service.ListarAsync();
         }
 
-        [HttpDelete("/exclir-quarto/{id}")]
+        [HttpDelete("/excluir-quarto/{id}")]
         public async Task<IActionResult> ApagarQuarto([FromRoute] int id)
         {
             if (id <= 0)

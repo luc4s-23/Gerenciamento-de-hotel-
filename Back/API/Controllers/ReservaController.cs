@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Back.API.Controllers
 {
+    [ApiController]
     [Route("[controller]")]
     public class ReservaController : ControllerBase
     {
@@ -15,7 +16,7 @@ namespace Back.API.Controllers
             _service = service;
         }
 
-        [HttpPost("/Nova-reserva/{Quarto_ID_FK}")]
+        [HttpPost("/nova-reserva/{Quarto_ID_FK}")]
         public async Task<IActionResult> NovaReservaAsync([FromBody] ReservaDTO dto, [FromRoute] int Quarto_ID_FK)
         {
             if (!ModelState.IsValid)
@@ -26,7 +27,7 @@ namespace Back.API.Controllers
             return Ok(dto);
         }
 
-        [HttpGet("/Buscar-reservas")]
+        [HttpGet("/buscar-reservas")]
         public async Task<List<ReservaReadDTO>> BuscarTodosAsync()
         {
             return await _service.BuscarTodosAsync();
@@ -38,7 +39,7 @@ namespace Back.API.Controllers
             var ReservaID = await _service.BuscarPorIdAsync(id);
             return Ok(ReservaID);
         }
-        [HttpPut("/atualizar-reserva/{id}")]
+        [HttpPut("/atualizar-reserva/{Id}")]
         public async Task<IActionResult> AtualizarReserva([FromRoute]int Id, ReservaDTO dto)
         {
             var AtualizarReserva = await _service.AtualizarAsync(Id, dto);

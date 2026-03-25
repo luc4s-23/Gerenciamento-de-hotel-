@@ -1,58 +1,48 @@
 import "./Quarto.css";
-import Card from '../../Components/Card/CardResumo';
+import { useEffect, useState } from "react";
+import { listarQuartos } from "../../Services/QuartoService";
+import Card from "../../Components/Card/CardResumo";
 
 function Quarto() {
+  const [quartos, setQuartos] = useState([]);
+
+  useEffect(() => {
+    const carregar = async () => {
+      try {
+        const dados = await listarQuartos();
+        console.log("retorno de dados", dados)
+        setQuartos(dados);
+      } catch (error) {
+        console.error("Erro ao carregar quartos:", error);
+      }
+    };
+
+    carregar();
+  }, []);
+
   return (
     <main className="main-quarto">
       <h1>Quartos</h1>
+
       <section className="cards-quartos">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {quartos.length > 0 ? (
+          quartos.map((quarto) => (
+            <Card
+              key={quarto.Id_quarto}
+              id={quarto.Id_quarto}
+              numero={quarto.Numero_quarto}
+              status={quarto.Status}
+              tipo={quarto.Tipo}
+              capacidade={quarto.Capacidade}
+              diaria={quarto.Preco_diaria}
+            />
+          ))
+        ) : (
+          <p>Nenhum quarto encontrado.</p>
+        )}
       </section>
     </main>
   );
 }
-
-// function Quarto() {
-//   return (
-//     <main className="quarto-container">
-//       <header className="head-quartos">
-//         <h1 className="titulo-pag">Gestão de quartos</h1>
-
-//         <Botao
-//           className="botao-novo-quarto"
-//           classe="verde"
-//           children={"Novo Quarto"}
-//         />
-//       </header>
-
-//       <section className="hero-quarto">
-//         <BarraPesquisa Tplaceholder={"Buscar quartos..."} />
-
-//         <div className="tabela-quartos">
-//           <table class="tabela-dark">
-//             <thead>
-//               <tr>
-//                 <th>Número do quarto</th>
-//                 <th>Tipo</th>
-//                 <th>Capacidade</th>
-//                 <th>Preço diária</th>
-//                 <th>Descrição</th>
-//                 <th>Status</th>
-//                 <th>Ações</th>
-//               </tr>
-//             </thead>
-
-//             <tbody></tbody>
-//           </table>
-//         </div>
-//       </section>
-//     </main>
-//   );
-// }
 
 export default Quarto;
