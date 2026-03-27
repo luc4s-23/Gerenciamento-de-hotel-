@@ -12,6 +12,10 @@
     align-items: start;
 }
 
+.btn-novo-quarto{
+    width: 180px;
+}
+
 /*
 .quarto-container {
     display: flex;

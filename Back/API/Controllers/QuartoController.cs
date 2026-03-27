@@ -1,4 +1,5 @@
 using Back.API.DTO;
+using Back.API.Model;
 using Back.API.Service;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,7 +29,7 @@ namespace Back.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<QuartoDTO>> BuscarTodosAsync()
+        public async Task<IEnumerable<Quarto>> BuscarTodosAsync()
         {
             return await _service.ListarAsync();
         }

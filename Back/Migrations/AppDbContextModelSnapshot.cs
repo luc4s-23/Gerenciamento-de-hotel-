@@ -111,6 +111,23 @@ namespace Hoteis.Migrations
                     b.ToTable("reservas");
                 });
 
+            modelBuilder.Entity("Back.API.Model.Tipo", b =>
+                {
+                    b.Property<int>("idTipo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idTipo"));
+
+                    b.Property<string>("nomeTipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("idTipo");
+
+                    b.ToTable("tipos");
+                });
+
             modelBuilder.Entity("Back.API.Model.Usuario", b =>
                 {
                     b.Property<int>("Id")

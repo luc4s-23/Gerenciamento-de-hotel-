@@ -1,7 +1,7 @@
 using Back.API.Data;
-using Back.API.DTO;
+
 using Back.API.Model;
-using Back.API.Repository;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace Back.API.Repository
@@ -15,15 +15,15 @@ namespace Back.API.Repository
             _context = context;
         }
 
-        public async Task<IEnumerable<QuartoDTO>> ListarTodosAsync()
+        public async Task<IEnumerable<Quarto>> ListarTodosAsync()
         {
-            return await _context.quartos.Select(q => new QuartoDTO
+            return await _context.quartos.Select(q => new Quarto
             {
                 Capacidade = q.Capacidade,
                 Descricao = q.Descricao,
                 Numero_quarto = q.Numero_quarto,
                 Preco_diaria = q.Preco_diaria,
-                tipo = q.tipo
+                tipo = q.tipo,
             }).ToListAsync();
         }
 

@@ -27,10 +27,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IQuartoService, QuartoService>();
 builder.Services.AddScoped<IReservaService, ReservaService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+builder.Services.AddScoped<ITipoService, TipoService>();
 
 builder.Services.AddScoped<IReservaRepository, ReservaRepository>();
 builder.Services.AddScoped<IQuartoRepository, QuartoRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<ITipoRepository, TipoRepository>();
 
 var app = builder.Build();
 
@@ -49,6 +51,7 @@ app.UseExceptionHandler(appError =>
                 statusCode = 500,
                 message = "Ocorreu um erro interno. Tente novamente."
             });
+            
         }
     });
 });

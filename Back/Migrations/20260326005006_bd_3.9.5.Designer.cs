@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hoteis.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260324012307_bd_3.9.4")]
-    partial class bd_394
+    [Migration("20260326005006_bd_3.9.5")]
+    partial class bd_395
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -112,6 +112,23 @@ namespace Hoteis.Migrations
                     b.HasIndex("Quarto_ID_FK");
 
                     b.ToTable("reservas");
+                });
+
+            modelBuilder.Entity("Back.API.Model.Tipo", b =>
+                {
+                    b.Property<int>("idTipo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idTipo"));
+
+                    b.Property<string>("nomeTipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("idTipo");
+
+                    b.ToTable("tipos");
                 });
 
             modelBuilder.Entity("Back.API.Model.Usuario", b =>

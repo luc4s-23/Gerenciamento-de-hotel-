@@ -5,7 +5,7 @@ namespace Back.API.Repository
 {
     public interface IQuartoRepository
     {
-        Task<IEnumerable<QuartoDTO>> ListarTodosAsync();
+        Task<IEnumerable<Quarto>> ListarTodosAsync();
         Task<Quarto?> BuscarPorIdAsync(int id);
         Task<Quarto?> BuscarPorNumero(string Numero_quarto);
         Task AdicionarAsync(Quarto quarto);

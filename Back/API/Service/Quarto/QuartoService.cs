@@ -46,7 +46,7 @@ namespace Back.API.Service
             // mas como não foi especificado, retornamos apenas a entidade criada.
             // Exemplo: _context.Quartos.Add(quarto); _context.SaveChanges();
         }
-        public async Task<IEnumerable<QuartoDTO>> ListarAsync()
+        public async Task<IEnumerable<Quarto>> ListarAsync()
         {
             return await _repository.ListarTodosAsync();
         }
