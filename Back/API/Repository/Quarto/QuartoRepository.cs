@@ -19,6 +19,7 @@ namespace Back.API.Repository
         {
             return await _context.quartos.Select(q => new Quarto
             {
+                Id_quarto = q.Id_quarto,
                 Capacidade = q.Capacidade,
                 Descricao = q.Descricao,
                 Numero_quarto = q.Numero_quarto,

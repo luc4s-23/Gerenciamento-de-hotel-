@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
 namespace Back.API.Model
@@ -6,6 +7,7 @@ namespace Back.API.Model
     public class Quarto
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // Isso avisa que o Azure gera o ID
         public int Id_quarto { get; set; }
         [Required]
         public string? Numero_quarto { get; set; }

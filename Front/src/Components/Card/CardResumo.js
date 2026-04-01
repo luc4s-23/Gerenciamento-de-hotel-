@@ -1,7 +1,8 @@
 import './Card.css';
 import Botao from '../Botao/Botao';
+import { deletarQuarto } from '../../Services/QuartoService';
 
-function Card({ id, numero, status, tipo, capacidade, diaria }) {
+function Card({ id, numero, status, tipo, capacidade, diaria, aoExcluir }) {
   const formatoLocale = new Intl.NumberFormat('pt-br', {
     style: 'currency',
     currency: 'BRL'
@@ -14,6 +15,19 @@ function Card({ id, numero, status, tipo, capacidade, diaria }) {
       return 'Ocupado'
     }
   }
+
+  const handleExcluir = async () => {
+    if (window.confirm(`Deseja excluir o quarto: ${numero}?`)) {
+      try {
+        await deletarQuarto(id);
+        alert("Excluido com sucesso!");
+        aoExcluir();
+      } catch {
+        alert("Erro ao excluir", console.error())
+      }
+    }
+  };
+
   return (
     <div className="card-quarto">
       <div className="card-topo">
@@ -30,7 +44,8 @@ function Card({ id, numero, status, tipo, capacidade, diaria }) {
       <div className="card-detalhes">
         <div className="card-acoes">
           <Botao className="botao-editar" classe="verde" children="Editar" />
-          <Botao className="botao-editar" classe="vermelho" children="Excluir" />
+          <Botao className="botao-editar" classe="laranja" children="Editar" />
+          <Botao className="botao-editar" classe="vermelho" children="Excluir" onClick={handleExcluir}/>
         </div>
       </div>
     </div>

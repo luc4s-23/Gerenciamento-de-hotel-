@@ -17,7 +17,7 @@ namespace Back.API.Controllers
             _service = service;
         }
 
-        [HttpPost("/novo-quarto")]
+        [HttpPost]
         public async Task<IActionResult> Criar([FromBody] QuartoDTO dto)
         {
             if (!ModelState.IsValid)
@@ -34,7 +34,7 @@ namespace Back.API.Controllers
             return await _service.ListarAsync();
         }
 
-        [HttpDelete("/excluir-quarto/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> ApagarQuarto([FromRoute] int id)
         {
             if (id <= 0)
@@ -45,7 +45,7 @@ namespace Back.API.Controllers
             return Ok(id);
         }
 
-        [HttpPut("/atualizar-infos/{id}")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> AtualizarInfo([FromRoute]int id, [FromBody]QuartoDTO dto)
         {
             if (id <= 0)
