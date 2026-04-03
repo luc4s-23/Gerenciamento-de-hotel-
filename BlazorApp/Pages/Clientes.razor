@@ -1,0 +1,25 @@
+@page "/listaclientes"
+@using GerenciamentoHotel.shared.DTO
+@inject HttpClient Http
+
+<PageTitle>Gestão de Clientes</PageTitle>
+<h3>Gestão de Clientes</h3>
+
+@if (listaClientes == null){
+    <p><em>Carregando dados</em></p>
+}else{
+    <ul>
+        @foreach(var cliente in listaClientes){
+            <li>@cliente.Nome - @cliente.Email</li>
+        }
+    </ul>
+}
+
+@code{
+    private string NomeUsuario = "Lucas";
+    private List<ClienteDTO>? listaClientes;
+
+    protected override async Task OnInitializedAsync(){
+        //clientes = await Http.GetFromJsonAsync<List<ClienteDTO>>("https://localhost:5038/api/clientes");
+    }
+}

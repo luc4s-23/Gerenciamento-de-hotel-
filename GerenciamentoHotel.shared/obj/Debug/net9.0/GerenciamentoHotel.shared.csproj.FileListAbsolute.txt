@@ -1,0 +1,12 @@
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\bin\Debug\net9.0\GerenciamentoHotel.shared.deps.json
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\bin\Debug\net9.0\GerenciamentoHotel.shared.dll
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\bin\Debug\net9.0\GerenciamentoHotel.shared.pdb
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\obj\Debug\net9.0\GerenciamentoHotel.shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\obj\Debug\net9.0\GerenciamentoHotel.shared.AssemblyInfoInputs.cache
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\obj\Debug\net9.0\GerenciamentoHotel.shared.AssemblyInfo.cs
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\obj\Debug\net9.0\GerenciamentoHotel.shared.csproj.CoreCompileInputs.cache
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\obj\Debug\net9.0\GerenciamentoHotel.shared.sourcelink.json
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\obj\Debug\net9.0\GerenciamentoHotel.shared.dll
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\obj\Debug\net9.0\refint\GerenciamentoHotel.shared.dll
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\obj\Debug\net9.0\GerenciamentoHotel.shared.pdb
+D:\Visual Studio\Gerenciamento-de-hotel-\GerenciamentoHotel.shared\obj\Debug\net9.0\ref\GerenciamentoHotel.shared.dll

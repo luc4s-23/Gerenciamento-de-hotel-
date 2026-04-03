@@ -1665,6 +1665,16 @@
             "rid": "win"
           }
         }
+      },
+      "GerenciamentoHotel.shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/GerenciamentoHotel.shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GerenciamentoHotel.shared.dll": {}
+        }
       }
     }
   },
@@ -4837,10 +4847,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "GerenciamentoHotel.shared/1.0.0": {
+      "type": "project",
+      "path": "../GerenciamentoHotel.shared/GerenciamentoHotel.shared.csproj",
+      "msbuildProject": "../GerenciamentoHotel.shared/GerenciamentoHotel.shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "GerenciamentoHotel.shared >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.11",
@@ -4856,11 +4872,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio\\Gerenciamento-de-hotel-\\back\\Hoteis.csproj",
+      "projectUniqueName": "D:\\Visual Studio\\Gerenciamento-de-hotel-\\Back\\Hoteis.csproj",
       "projectName": "Hoteis",
-      "projectPath": "D:\\Visual Studio\\Gerenciamento-de-hotel-\\back\\Hoteis.csproj",
+      "projectPath": "D:\\Visual Studio\\Gerenciamento-de-hotel-\\Back\\Hoteis.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio\\Gerenciamento-de-hotel-\\back\\obj\\",
+      "outputPath": "D:\\Visual Studio\\Gerenciamento-de-hotel-\\Back\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4881,7 +4897,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Visual Studio\\Gerenciamento-de-hotel-\\GerenciamentoHotel.shared\\GerenciamentoHotel.shared.csproj": {
+              "projectPath": "D:\\Visual Studio\\Gerenciamento-de-hotel-\\GerenciamentoHotel.shared\\GerenciamentoHotel.shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
