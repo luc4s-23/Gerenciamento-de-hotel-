@@ -1,7 +1,8 @@
 using GerenciamentoHotel.shared.DTO;
-using Back.API.DTO;
 using Back.API.Service;
 using Microsoft.AspNetCore.Mvc;
+using Back.API.Data;
+using Shared.DTO;
 
 
 namespace Back.API.Controllers

@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using GerenciamentoHotel.shared.Enums;
 using Microsoft.EntityFrameworkCore;
 
 

@@ -1,0 +1,26 @@
+@page "/listaclientes"
+@using GerenciamentoHotel.shared.DTO
+@inject HttpClient Http
+
+<PageTitle>Gestão de Clientes</PageTitle>
+<h3>Gestão de Clientes</h3>
+
+@if (listaClientes == null){
+    <p><em>Carregando dados</em></p>
+}else{
+    <ul>
+        @foreach(var cliente in listaClientes){
+            <li>@cliente.Nome - @cliente.Email</li>
+        }
+    </ul>
+}
+
+@code{
+    private List<ClienteDTO>? listaClientes;
+
+    protected override async Task OnInitializedAsync(){
+        //AQUI DEVE SER FEITO O CÓDIGO QUE IRÁ TRABALHAR ENTRE API E FRONT END
+        //EXEMPLO ABAIXO: O código irá fazer uma busca pela api, de todos os clientes, retornando e armazenando tudo dentro da variável "listaClientes"
+        //listaClientes = await Http.GetFromJsonAsync<List<ClienteDTO>>("http://localhost:5201/api/clientes");
+    }
+}

@@ -3,6 +3,7 @@ using Back.API.Model;
 using GerenciamentoHotel.shared.DTO;
 using Back.API.Data;
 using Microsoft.EntityFrameworkCore;
+using Shared.DTO;
 
 namespace Back.API.Service
 {

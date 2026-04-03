@@ -1,6 +1,7 @@
 // 1. Defina um alias (apelido) para a classe Quarto do Model
 using GerenciamentoHotel.shared.DTO;
-using Back.API.Model; // Este using ainda é útil se você tiver outros tipos aqui.
+using Back.API.Model;
+using Shared.DTO; // Este using ainda é útil se você tiver outros tipos aqui.
 
 // 2. Seu namespace permanece o mesmo para manter a organização
 namespace Back.API.Service

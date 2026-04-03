@@ -1,6 +1,8 @@
 using GerenciamentoHotel.shared.DTO;
 using Back.API.Repository;
 using Back.API.Model;
+using Shared.DTO;
+using GerenciamentoHotel.shared.Enums;
 
 namespace Back.API.Service
 {

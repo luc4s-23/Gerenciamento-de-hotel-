@@ -1,5 +1,6 @@
 using Back.API.Model;
 using GerenciamentoHotel.shared.DTO;
+using Shared.DTO;
 
 namespace Back.API.Service
 {

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorApp",
   "resources": {
-    "hash": "sha256-iQpWEZOBm2yIa7R9t7eQuNJyAOtXck//IdmmhBkKHao=",
+    "hash": "sha256-dSuVfo5mUXhc/LbE+LqC1j1FFy3+eM+5igE7DgiUcMA=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.n7we7nbch1.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.waskkzx0nn.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,10 +201,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "GerenciamentoHotel.shared.blztoxx5j6.wasm": "GerenciamentoHotel.shared.wasm",
-      "GerenciamentoHotel.shared.9c9y6dr22a.pdb": "GerenciamentoHotel.shared.pdb",
-      "BlazorApp.uuxu8fjbjf.wasm": "BlazorApp.wasm",
-      "BlazorApp.qu8y93u05x.pdb": "BlazorApp.pdb"
+      "GerenciamentoHotel.shared.dj7ohuvudi.wasm": "GerenciamentoHotel.shared.wasm",
+      "GerenciamentoHotel.shared.27ussm59hh.pdb": "GerenciamentoHotel.shared.pdb",
+      "BlazorApp.a6hhzyfju7.wasm": "BlazorApp.wasm",
+      "BlazorApp.gsoda0v2vq.pdb": "BlazorApp.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.uhsveqo9bs.js": "sha256-/ifJokfQvXKw1hEziCkYR9SOJIKSdGG/UKw5gbLWrj0="
@@ -414,12 +414,12 @@
       "WindowsBase.pe1q66fox7.wasm": "sha256-X+jubl681x6U1UjhhKVz+cjOvMv1wDBWIyyFenqJnPc=",
       "mscorlib.ypkr78tz1c.wasm": "sha256-Wkc7KpMw/bTWNoLCRv9T8olIOmCpEiJSeUZsUQEnwrA=",
       "netstandard.ifx8vojh9u.wasm": "sha256-PqpRCbO73PFsE8ik5zmAuG1kKax3c7bGhjOOeuiUcyY=",
-      "GerenciamentoHotel.shared.blztoxx5j6.wasm": "sha256-b+UufkK4KA8l+RBwg3TXC8yvdkzk9S8yAq+cuGdcM/Y=",
-      "BlazorApp.uuxu8fjbjf.wasm": "sha256-5pp8jZnq3CMRNA8Kw+mjvNSV98Sq5KyOw5J7HzVA7js="
+      "GerenciamentoHotel.shared.dj7ohuvudi.wasm": "sha256-12pYAm7+tAaVLrLLGGz3DSCdNPIGx6jcgjAUZ8GiJM4=",
+      "BlazorApp.a6hhzyfju7.wasm": "sha256-MuwRc7gVwO9swXWa60xo15gkipVRujgz2EH+oetPNkM="
     },
     "pdb": {
-      "GerenciamentoHotel.shared.9c9y6dr22a.pdb": "sha256-ya2ZJuIE6BAfY8uRpcq/D6ZKy1S7x+Q7OHGm65tFkKA=",
-      "BlazorApp.qu8y93u05x.pdb": "sha256-rinUMmDoMwCX6n9a5You1pwiyXvizPOXGepl3Fxh0l0="
+      "GerenciamentoHotel.shared.27ussm59hh.pdb": "sha256-3st8O5lJPVdVhWx9Te18cjVwLsXCyRVAjJq2D9DUN/s=",
+      "BlazorApp.gsoda0v2vq.pdb": "sha256-wHgwl3asbeNbliPZn2U2gOIIM10gQqMmvzVK7wsAQyM="
     }
   },
   "cacheBootResources": true,

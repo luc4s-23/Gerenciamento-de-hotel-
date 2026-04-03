@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using GerenciamentoHotel.shared.Enums;
+using Microsoft.EntityFrameworkCore;
 
 namespace Back.API.Model
 {

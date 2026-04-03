@@ -3,6 +3,7 @@ using GerenciamentoHotel.shared.DTO;
 using Back.API.Repository;
 using Back.API.Data;
 using Microsoft.EntityFrameworkCore;
+using Shared.DTO;
 
 
 namespace Back.API.Service
@@ -54,7 +55,7 @@ namespace Back.API.Service
                 Quantidade_hospedes = dto.Quantidade_hospedes.Value,
                 DataCheckIn = DateTime.UtcNow,
                 DataCheckOut = dto.DataCheckIn.AddDays(dto.QuantidadeDiarias),
-                Status = Reserva.StatusReserva.CheckInRealizado,
+                //Status = Reserva,
                 ValorTotal = dto.QuantidadeDiarias * quarto.Preco_diaria
             };
 
